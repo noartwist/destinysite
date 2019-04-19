@@ -228,7 +228,7 @@ footer{
   /* Modal Content */
   .modal-content {
     position: relative;
-    background-color: #fefefe;
+    /* background-color: #fefefe; */
     margin: auto;
     padding: 0;
     width: 90%;
@@ -323,4 +323,30 @@ footer{
   
   .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #e7e7e7;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #c2c2c2;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: #e7e7e7;
+    display: none;
+    overflow: hidden;
   }
