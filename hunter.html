@@ -51,11 +51,10 @@
             <button class="accordion">View Subclass Information</button>
             <div class="panel">
             <p><img src = "images/spectralblades.jpg" alt = ""/></p>
-            
-            <p>Melee - Corrosive Smoke: The Nightstalker’s smoke bomb fires in a line from where it explodes, slowing enemies and dealing damage.</p>
-            <p>Perk - Flawless Execution: Precision kills while at full health let Nightstalkers turn invisible. They also gain truesight, an ability that allows players to see through walls.</p>
-            <p>Perk - Shattering Strike: Meleeing an enemy while invisible will debuff them, causing them to deal less damage for a short time.</p>
-            <p>Super - Spectral Blades: The Nightstalker super is Spectral Blades, which turns the Hunter invisible and lets them sneak around to stab their enemies in the back.</p>
+                <p>Melee - Corrosive Smoke: The Nightstalker’s smoke bomb fires in a line from where it explodes, slowing enemies and dealing damage.</p>
+                <p>Perk - Flawless Execution: Precision kills while at full health let Nightstalkers turn invisible. They also gain truesight, an ability that allows players to see through walls.</p>
+                <p>Perk - Shattering Strike: Meleeing an enemy while invisible will debuff them, causing them to deal less damage for a short time.</p>
+                <p>Super - Spectral Blades: The Nightstalker super is Spectral Blades, which turns the Hunter invisible and lets them sneak around to stab their enemies in the back.</p>
             </div>
         </div>
 
@@ -89,6 +88,28 @@
         </div>
         </div>
     </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+        
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+        
 </main>
 <footer>
     <i class="fab fa-linkedin"> https://www.linkedin.com/in/noahwrucker/</i> <i class="fas fa-envelope-square"> nwrucker@umich.edu</i>
