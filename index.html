@@ -23,7 +23,7 @@
     <a href = "#main" class = "skip">Skip to Content</a>
     <Header>
         <nav>
-            <ul class = "navi">
+            <ul class = "navi" id = "navigation">
                 <li><a href="index.html" class = current>Home</a></li>
                 <li><a href="titan.html">Titan Abilities</a></li>
                 <li><a href="hunter.html">Hunter Abilities</a></li>
@@ -131,17 +131,187 @@
             </h2>
 
             <div class = "container">
-                <img src = "images/uldrensov.jpg" alt = "gallery image of Uldren Sov, main antagonist of Forsaken"/>
-                <img src = "images/spider.jpg" alt = "gallery image of the Spider, fallen mob boss of the tangled shore"/> 
-                <img src = "images/cayde6.jpg" alt = "gallery image of Cayde-6, Hunter Vanguard Leader"/>
-                <img src = "images/marasov.jpg" alt = "gallery image of Mara Sov, queen of the Awoken"/>
-                <img src = "images/barons.jpg" alt = "gallery image of the scorned barons"/>
-                <img src = "images/petra.jpg" alt = "gallery image of Petra Venj"/>
-                <img src = "images/tangledshore.jpg" alt = "gallery image of the Tangled Shore"/>
-                <img src = "images/scorn.jpg" alt = "gallery image of a scorn enemy"/>
-                <img src = "images/newgear.jpg" alt = "gallery image of Guardians using Forsaken gear"/>
+                <!-- <div class="column"> -->
+                <img src = "images/uldrensov.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt = "gallery image of Uldren Sov, main antagonist of Forsaken"/>
+                <!-- </div> -->
+                <!-- <div class="column"> -->
+                <img src = "images/spider.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt = "gallery image of the Spider, fallen mob boss of the tangled shore"/> 
+                <!-- </div> -->
+                <!-- <div class="column"> -->
+                <img src = "images/cayde6.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt = "gallery image of Cayde-6, Hunter Vanguard Leader"/>
+                <!-- </div> -->
+                <!-- <div class="column"> -->
+                <img src = "images/marasov.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" alt = "gallery image of Mara Sov, queen of the Awoken"/>
+                <!-- </div> -->
+                <!-- <div class="column"> -->
+                <img src = "images/barons.jpg" onclick="openModal();currentSlide(51)" class="hover-shadow" alt = "gallery image of the scorned barons"/>
+                <!-- </div> -->
+                <!-- <div class="column"> -->
+                <img src = "images/petra.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" alt = "gallery image of Petra Venj"/>
+                <!-- </div> -->
+                <!-- <div class="column"> -->
+                <img src = "images/tangledshore.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow" alt = "gallery image of the Tangled Shore"/>
+                <!-- </div> -->
+                <!-- <div class="column"> -->
+                <img src = "images/scorn.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow" alt = "gallery image of a scorn enemy"/>
+                <!-- </div> -->
+                <!-- <div class="column"> -->
+                <img src = "images/newgear.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow" alt = "gallery image of Guardians using Forsaken gear"/>
+                <!-- </div> -->
+            </div>
+            
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                  
+                <div class="mySlides">
+                    <div class="numbertext">1 / 9</div>
+                    <img src="images/uldrensov.jpg" style="width:100%">
+                </div>
+                  
+                <div class="mySlides">
+                    <div class="numbertext">2 / 9</div>
+                    <img src="images/spider.jpg" style="width:100%">
+                </div>
+                  
+                <div class="mySlides">
+                    <div class="numbertext">3 / 9</div>
+                    <img src="images/cayde6.jpg" style="width:100%">
+                </div>
+                  
+                <div class="mySlides">
+                    <div class="numbertext">4 / 9</div>
+                    <img src="images/marasov.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 9</div>
+                    <img src="images/barons.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 9</div>
+                    <img src="images/petra.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 9</div>
+                    <img src="images/tangledshore.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">8 / 9</div>
+                    <img src="images/scorn.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">9 / 9</div>
+                    <img src="images/newgear.jpg" style="width:100%">
+                </div>
+                  
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>  
+                </div>
+                  
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo" src="images/uldrensov.jpg" onclick="currentSlide(1)" alt="gallery image of Uldren Sov, main antagonist of Forsaken">
+                </div>
+                  
+                <div class="column">
+                    <img class="demo" src="images/spider.jpg" onclick="currentSlide(2)" alt="gallery image of the Spider, fallen mob boss of the tangled shore">
+                </div>
+                  
+                <div class="column">
+                    <img class="demo" src="images/cayde6.jpg" onclick="currentSlide(3)" alt="gallery image of Cayde-6, Hunter Vanguard Leader">
+                </div>
+                  
+                <div class="column">
+                    <img class="demo" src="images/marasov.jpg" onclick="currentSlide(4)" alt="gallery image of Mara Sov, queen of the Awoken">
+                </div>
+
+                 <div class="column">
+                    <img class="demo" src="images/barons.jpg" onclick="currentSlide(5)" alt="gallery image of the scorned barons">
+                </div>
+                 <div class="column">
+                    <img class="demo" src="images/petra.jpg" onclick="currentSlide(6)" alt="gallery image of Petra Venj">
+                </div>
+                 <div class="column">
+                    <img class="demo" src="images/tangledshore.jpg" onclick="currentSlide(7)" alt="gallery image of the Tangled Shore">
+                </div>
+                 <div class="column">
+                    <img class="demo" src="images/scorn.jpg" onclick="currentSlide(8)" alt="gallery image of a scorn enemy">
+                </div>
+                 <div class="column">
+                    <img class="demo" src="images/newgear.jpg" onclick="currentSlide(9)" alt="gallery image of Guardians using Forsaken gear">
+                </div>
             </div>
         </div>
+
+        <script>
+            window.onscroll = function() {stick()};
+
+            var nav = document.getElementById("navigation")
+            var sticky = nav.offsetTop;
+
+            function stick(){
+                if (window.pageYOffset >= sticky){
+                    nav.classList.add("sticky")
+                }
+                else{
+                    nav.classList.remove("sticky")
+                }
+            }
+        </script>
+
+    <script>
+        // Open the Modal
+        function openModal() {
+          document.getElementById('myModal').style.display = "block";
+        }
+        
+        // Close the Modal
+        function closeModal() {
+          document.getElementById('myModal').style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+
     </main>
 
     <footer>
