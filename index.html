@@ -35,6 +35,19 @@
     <main>
         <div class = "test">
 
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Open Modal</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+            </div>
+        </div>
+        
+
         </div>
         <div class = "content">
             <div class = "intro">
@@ -311,6 +324,14 @@
           captionText.innerHTML = dots[slideIndex-1].alt;
         }
         </script>
+
+    <div class="callout">
+        <div class="callout-header">Important Notice:</div>
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <div class="callout-container">
+          <p>This website has been made for testng purposes only, and should not be used as a primary source of information regarding the Destiny 2: Forsaken expansion.</p>
+        </div>
+      </div>
 
     </main>
 
